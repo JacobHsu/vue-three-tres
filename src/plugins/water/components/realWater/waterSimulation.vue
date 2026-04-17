@@ -1,11 +1,3 @@
-<!--
- * @Description: 
- * @Version: 1.668
- * @Autor: 地虎降天龙
- * @Date: 2024-11-18 10:10:50
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2025-09-30 10:00:29
--->
 <template>
     <caustics :lightFrontGeometry="_geometry" :waterTexture="texture.texture" :light="light" />
 </template>
@@ -131,7 +123,7 @@ const mouseEventHandler = {
 };
 const mouseEvent = (isOn: boolean) => {
     if (isOn) {
-        renderer.domElement.addEventListener('mousemove', throttle(onMouseMove, 30)) // 降低监听帧率
+        renderer.domElement.addEventListener('mousemove', throttle(onMouseMove, 30)) // 降低監聽幀率
     } else {
         renderer.domElement.removeEventListener('mousemove', mouseEventHandler)
     }

@@ -67,6 +67,15 @@ export function layout (layoutConfig) {
 }
 
 
+export function onRouterCreated ({ router }) {
+    if (process.env.FES_APP_REDIRECT) {
+        const target = process.env.FES_APP_REDIRECT
+        router.beforeEach((to) => {
+            if (to.path === '/') return target
+        })
+    }
+}
+
 export function onAppCreated ({ app }) {
     app.use(FMenu)
     app.use(Tres)

@@ -1,11 +1,3 @@
-<!--
- * @Description: 
- * @Version: 1.668
- * @Autor: 地虎降天龙
- * @Date: 2024-11-18 08:56:34
- * @LastEditors: 地虎降天龙
- * @LastEditTime: 2025-09-25 18:31:24
--->
 <template>
     <TresCanvas v-bind="state">
         <TresPerspectiveCamera :position="[0.426, 0.677, -2.095]" :fov="75" :near="0.01" :far="1000" />
@@ -25,7 +17,7 @@ const state = reactive({
     alpha: true,
     antialias: true,
     windowSize: true,
-    clearAlpha: 0, // 有些版本 无效 需要自行设置 renderer.value.autoClear = false
+    clearAlpha: 0, // 有些版本 無效 需要自行設定 renderer.value.autoClear = false
     renderMode: 'manual',
 })
 const light = [0.7559289460184544, 0.7559289460184544, -0.3779644730092272]
@@ -34,8 +26,8 @@ const waterSimulationRef = ref(null) as any
 const paneControl = new Pane()
 paneControl
     .addButton({
-        label: '点击按钮',
-        title: '随机增加波纹',
+        label: '點擊按鈕',
+        title: '隨機增加波紋',
     })
     .on('click', () => {
         for (var i = 0; i < 10; i++) {
@@ -45,7 +37,7 @@ paneControl
 const mouseE = ref(false)
 paneControl
     .addBinding(mouseE, 'value', {
-        label: '鼠标波纹',
+        label: '滑鼠波紋',
     })
     .on('change', (e: any) => {
         waterSimulationRef.value.mouseEvent(e.value)

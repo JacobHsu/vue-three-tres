@@ -1,9 +1,9 @@
-name: Build and Deploy to hawk86104.github.io
+name: Build and Deploy Water Plugin to GitHub Pages
 
 on:
   push:
     branches:
-      - master   # 或 master
+      - main
 
 jobs:
   deploy:
@@ -21,14 +21,13 @@ jobs:
       - name: Install deps
         run: yarn
 
-      - name: Build
-        run: yarn pre.build.icegl
+      - name: Build water plugin
+        run: yarn pre.build.water
 
-      - name: Deploy to github.io repo
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          personal_token: ${{ secrets.PAGES_TOKEN }}
-          external_repository: hawk86104/hawk86104.github.io
-          publish_branch: master        # 你 github.io 仓库的分支
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
           publish_dir: ./dist
-          commit_message: 'deploy: auto publish from three-vue-tres'
+          commit_message: 'deploy: water plugin'
