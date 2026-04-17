@@ -1,0 +1,41 @@
+<!--
+ * @Description: 
+ * @Version: 1.668
+ * @Autor: 地虎降天龙
+ * @Date: 2024-03-07 09:46:12
+ * @LastEditors: 地虎降天龙
+ * @LastEditTime: 2025-04-01 16:14:04
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.png">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            if (!window.__POWERED_BY_QIANKUN__) {
+                const hm = document.createElement("script")
+                hm.src = "https://hm.baidu.com/hm.js?3c442b1ada04ec23771dfc94ea581c10"
+                const s = document.getElementsByTagName("script")[0]
+                s.parentNode.insertBefore(hm, s)
+            }
+        })()
+    </script>
+
+    <script src="<%= BASE_URL %>lib/jweixin-1.6.0.js"></script>
+    <script src="<%= BASE_URL %>lib/uni.webview.0.1.52.js"></script>
+</head>
+
+<body>
+    <div id="<%= mountElementId %>"></div>
+</body>
+
+</html>
