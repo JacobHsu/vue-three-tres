@@ -1,4 +1,4 @@
-name: Build and Deploy Water Plugin to GitHub Pages
+name: Build and Deploy Plugins to GitHub Pages
 
 on:
   push:
@@ -24,13 +24,26 @@ jobs:
       - name: Install deps
         run: yarn
 
-      - name: Build water plugin
-        run: yarn pre.build.water
+      - name: Build refinery plugin
+        run: yarn pre.build.refinery
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy refinery to GitHub Pages (root)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./dist
+          publish_dir: ./dist-refinery
+          commit_message: 'deploy: refinery plugin'
+
+      - name: Build water plugin
+        run: yarn pre.build.water
+
+      - name: Deploy water to GitHub Pages (/water/)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./dist-water
+          destination_dir: water
+          keep_files: true
           commit_message: 'deploy: water plugin'

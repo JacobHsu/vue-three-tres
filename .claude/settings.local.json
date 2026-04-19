@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.icegl.cn)",
+      "WebFetch(domain:oss.icegl.cn)",
+      "Bash(git -C d:/3-vue/vue-three-tres log --oneline --follow .fes.predev.water.js)",
+      "Bash(git -C d:/3-vue/vue-three-tres show HEAD:.fes.predev.water.js)",
+      "Bash(git -C d:/3-vue/vue-three-tres show d0f72aa --stat)",
+      "Bash(grep -oP \"'[^']*[^\\\\x00-\\\\x7F][^']*'|\\\\\"[^\\\\\"]*[^\\\\x00-\\\\x7F][^\\\\\"]*\\\\\"|#[^\\\\x00-\\\\x7F][^#\\\\n]*|//[^\\\\n]*[^\\\\x00-\\\\x7F][^\\\\n]*\")",
+      "Bash(grep -v \"^\\\\\"[a-zA-Z0-9#./_@:-]*\\\\\"$\")",
+      "Bash(grep -v \"//.*地虎\\\\|Autor\\\\|LastEditors\")",
+      "Bash(python3 -c ' *)",
+      "Bash(git -C \"d:/3-vue/vue-three-tres\" remote get-url origin)"
+    ]
+  }
+}

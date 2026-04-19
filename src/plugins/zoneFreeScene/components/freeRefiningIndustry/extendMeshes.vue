@@ -5,7 +5,7 @@
                 :position="[-4.582, 0, -1.401]"
                 :rotation="[0, 0, 0]"
                 :scale="[0.5, 1.5, 0.6]"
-                name="静态水"
+                name="靜態水"
                 uuid="6bec83bd-ef17-4fe7-8397-16985c460c51"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -20,7 +20,7 @@
                 :position="[-0.065, 0, -1.555]"
                 :rotation="[0, 0, 0]"
                 :scale="[1, 1, 1]"
-                name="围墙高级"
+                name="圍牆高級"
                 uuid="c5b757d4-6f0d-4669-baee-dd989f6b7d21"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -50,7 +50,7 @@
                 :position="[-1.356, 2.116, 2.606]"
                 :rotation="[0, 0, 0]"
                 :scale="[2, 0.8, 2]"
-                name="精灵图文字"
+                name="精靈圖文字"
                 uuid="fa8e4041-ab68-467f-94e0-083417229540"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -65,7 +65,7 @@
                 :position="[8.773, 0.122, -1.478]"
                 :rotation="[0, 0, 0]"
                 :scale="[1, 1, 1]"
-                name="矩形渐变区域"
+                name="矩形漸變區域"
                 uuid="1e55fb48-dab3-43a4-9f6a-19bc45d0ef3b"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -80,7 +80,7 @@
                 :position="[4.773, 2.116, -6.151]"
                 :rotation="[0, 0, 0]"
                 :scale="[2, 0.8, 2]"
-                name="精灵图文字"
+                name="精靈圖文字"
                 uuid="d8741f1c-933a-40ef-b92c-ca8e916378a8"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -95,7 +95,7 @@
                 :position="[5.6080000000000005, 2.124, -2.622]"
                 :rotation="[1.6000000000000003, 0, 0]"
                 :scale="[1, 1, 1]"
-                name="伸缩管线2"
+                name="伸縮管線2"
                 uuid="26b3d5dd-2ac5-414c-9178-4dd88a1f1751"
                 :castShadow="true"
                 :receiveShadow="false"
@@ -110,7 +110,7 @@
                 :position="[4.105, 0.31, -1.183]"
                 :rotation="[3.141592653589793, 0.008407346410215549, -3.141592653589793]"
                 :scale="[1, 1, 1]"
-                name="伸缩管线2"
+                name="伸縮管線2"
                 uuid="89632a2f-47f2-4990-a4fd-2e6d61abce4d"
                 :castShadow="true"
                 :receiveShadow="false"
@@ -125,7 +125,7 @@
                 :position="[-1.192, 0.32, 0.603]"
                 :rotation="[0, -1.570000000000127, 0]"
                 :scale="[1, 1, 1]"
-                name="伸缩管线2"
+                name="伸縮管線2"
                 uuid="2f18637b-35cf-4ba1-8c81-fa1cdc7d9153"
                 :castShadow="true"
                 :receiveShadow="false"
@@ -140,7 +140,7 @@
                 :position="[-2.133, 0.32, 0.299]"
                 :rotation="[0, 0, 0]"
                 :scale="[1, 1, 1]"
-                name="伸缩管线2"
+                name="伸縮管線2"
                 uuid="ed6ab873-03b7-49f8-a95b-d83f98e2f28b"
                 :castShadow="true"
                 :receiveShadow="false"
@@ -155,7 +155,7 @@
                 :position="[1.877, 0.31, -1.379]"
                 :rotation="[3.141592653589793, -1.5615926535897844, 3.141592653589793]"
                 :scale="[1, 1, 1]"
-                name="伸缩管线2"
+                name="伸縮管線2"
                 uuid="623e74ce-36ef-4532-b7f0-95e0a5480081"
                 :castShadow="true"
                 :receiveShadow="false"
@@ -170,7 +170,7 @@
                 :position="[8.895, 2.116, -1.2770000000000001]"
                 :rotation="[0, 0, 0]"
                 :scale="[2, 0.8, 2]"
-                name="精灵图文字"
+                name="精靈圖文字"
                 uuid="34ef78a4-0d6a-498a-984c-34022b48709e"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -185,7 +185,7 @@
                 :position="[-4.793, 2.116, -1.2770000000000001]"
                 :rotation="[0, 0, 0]"
                 :scale="[2, 0.8, 2]"
-                name="精灵图文字"
+                name="精靈圖文字"
                 uuid="dcf10a77-fcfd-4beb-8b1b-6819adba6fa4"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -200,7 +200,7 @@
                 :position="[-3.1790000000000003, 0.271, -1.154]"
                 :rotation="[0, 1.5600000000000211, 0]"
                 :scale="[1, 1, 1]"
-                name="RoundedBox镜面"
+                name="RoundedBox鏡面"
                 uuid="e00355b5-9633-4f6a-8ffb-0d18d6bfce99"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -215,7 +215,7 @@
                 :position="[6.982, 0.271, -1.316]"
                 :rotation="[0, 0, 0]"
                 :scale="[1, 1, 1]"
-                name="RoundedBox镜面"
+                name="RoundedBox鏡面"
                 uuid="4e288fca-4920-430a-9dc6-ee8e37246f98"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -230,7 +230,7 @@
                 :position="[4.15, 0.271, -4.9350000000000005]"
                 :rotation="[0, 1.5600000000000211, 0]"
                 :scale="[1, 1, 1]"
-                name="RoundedBox镜面"
+                name="RoundedBox鏡面"
                 uuid="be8588c3-4cc0-4f90-b644-96289e313577"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -245,7 +245,7 @@
                 :position="[11.318, 0.029, -1.369]"
                 :rotation="[0, 0, 0]"
                 :scale="[1, 1, 1]"
-                name="RoundedBox镜面"
+                name="RoundedBox鏡面"
                 uuid="ebb24af5-7c7c-4f8d-b09d-8ac04296026c"
                 :castShadow="false"
                 :receiveShadow="false"
@@ -272,7 +272,7 @@ const eMeshState2 = { speed: -0.04, randomness: 0.45, count: 124, size: 0.08, co
 
 const eMeshState3 = {
     isSprite: true,
-    text: '废水再利用',
+    text: '廢水再利用',
     fontSize: 48,
     fontColor: '#000000',
     backgroundColor: '#EAE9E9B8',
@@ -289,7 +289,7 @@ const eMeshState4 = { w: 3.821, h: 7.753, pColor: '#DEDEDE', gradientWidth: 0.69
 
 const eMeshState5 = {
     isSprite: true,
-    text: '混合油处理',
+    text: '混合油處理',
     fontSize: 48,
     fontColor: '#000000',
     backgroundColor: '#F1EFEFC7',
@@ -399,7 +399,7 @@ const eMeshState10 = {
 
 const eMeshState11 = {
     isSprite: true,
-    text: '原油储罐区',
+    text: '原油儲罐區',
     fontSize: 48,
     fontColor: '#000000',
     backgroundColor: '#F1EFEFC7',
@@ -414,7 +414,7 @@ const eMeshState11 = {
 
 const eMeshState12 = {
     isSprite: true,
-    text: '污水处理区',
+    text: '污水處理區',
     fontSize: 48,
     fontColor: '#000000',
     backgroundColor: '#EAE9E9B8',

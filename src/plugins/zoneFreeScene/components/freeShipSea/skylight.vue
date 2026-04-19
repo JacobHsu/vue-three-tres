@@ -49,19 +49,19 @@ light.shadow.radius = props.shadowIntensity
 
 function updateSun() {
     const hour = props.curTime
-    let theta // 极角，从正Y轴向下的角度（太阳在天球上的位置）
+    let theta // 極角，从正Y轴向下的角度（太陽在天球上的位置）
     let lightIntensity
 
-    let azimuth = 0.15 // 太阳东西方向固定 Math.PI * 0.5
+    let azimuth = 0.15 // 太陽东西方向固定 Math.PI * 0.5
 
-    // 白天：太阳从地平线升起 -> 中午 -> 落下
+    // 白天：太陽从地平线升起 -> 中午 -> 落下
     const t = (hour - 6) / 12 // [0,1]
     const elevation = Math.PI * 0.25 * Math.sin(t * Math.PI) // 仰角最多 45°
-    theta = Math.PI / 2 - elevation // 转成极角
-    lightIntensity = 5 + 0.5 * Math.sin(t * Math.PI) // 亮度随中午变化
+    theta = Math.PI / 2 - elevation // 轉成極角
+    lightIntensity = 5 + 0.5 * Math.sin(t * Math.PI) // 亮度隨中午变化
 
-    // azimuth = Math.PI * (0.5 + t) // 从东到西
-    azimuth = Math.PI * (props.direct + t) // 从北到南
+    // azimuth = Math.PI * (0.5 + t) // 從東到西
+    azimuth = Math.PI * (props.direct + t) // 從北到南
     
     sun.setFromSphericalCoords(1, theta, azimuth)
     sky.material.uniforms['sunPosition'].value.copy(sun)

@@ -31,7 +31,7 @@ const syncMeshProp = (glb :THREE.Object3D, meshProp:any, animations:any) => {
     setupLightingForModel(glb, meshProp.castShadow, 'castShadow')
     setupLightingForModel(glb, meshProp.receiveShadow, 'receiveShadow')
 
-    // 同步动画
+    // 同步動畫
     if (animations && meshProp.actionList && meshProp.actionList.actions && Object.keys(meshProp.actionList.actions).length > 0) {
         const { mixer, actions } = useAnimations(ref(animations), glb as any)
         mixer.value.timeScale = meshProp.actionList.timeScale || 1

@@ -17,9 +17,9 @@ export default defineBuildConfig({
         ],
     },
     viteOption: {
-        base: '/vue-three-tres/water/',
+        base: '/vue-three-tres/',
         build: {
-            outDir: 'dist-water',
+            outDir: 'dist-refinery',
         },
         server: {
             proxy: {

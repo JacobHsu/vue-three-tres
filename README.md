@@ -5,6 +5,10 @@
 
 ## 🎉🎉🎊 三維視覺化專案快速落地的開源框架 🎊🎉🎉
 
+| 示範場景 | 連結 |
+|----------|------|
+| 🏭 低像素煉油廠 (freeRefiningIndustry) | [🌏 jacobhsu.github.io/vue-three-tres/](https://jacobhsu.github.io/vue-three-tres/) |
+| 💧 真實水面 (realWater) | [🌏 jacobhsu.github.io/vue-three-tres/water/](https://jacobhsu.github.io/vue-three-tres/water/) |
 
 ## Web 三維視覺化框架 
 

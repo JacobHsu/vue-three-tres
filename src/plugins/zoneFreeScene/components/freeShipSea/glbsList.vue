@@ -30,7 +30,7 @@ const syncMeshProp = (glb: THREE.Object3D, meshProp: any, animations: any) => {
     setupLightingForModel(glb, meshProp.castShadow, 'castShadow')
     setupLightingForModel(glb, meshProp.receiveShadow, 'receiveShadow')
 
-    // 同步动画
+    // 同步動畫
     if (animations && meshProp.actionList && meshProp.actionList.actions && Object.keys(meshProp.actionList.actions).length > 0) {
         const { mixer, actions } = useAnimations(ref(animations), glb as any)
         mixer.value.timeScale = meshProp.actionList.timeScale || 1
@@ -61,19 +61,19 @@ meshAddEvent(oneglb1_0, [
         eventType: 'click',
         enabled: false,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("单击事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("單擊事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'doubleclick',
         enabled: false,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("双击事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("雙擊事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'contextmenu',
         enabled: false,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("鼠标右键:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠右鍵:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'pointerenter',
@@ -81,7 +81,7 @@ meshAddEvent(oneglb1_0, [
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
             window.tvtDomPanel2visible.value = true
             document.body.style.cursor = 'pointer'
-            console.log("鼠标移入:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠移入:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'pointerleave',
@@ -89,7 +89,7 @@ meshAddEvent(oneglb1_0, [
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
             window.tvtDomPanel2visible.value = false
             document.body.style.cursor = 'default'
-            console.log("鼠标移出:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠移出:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     },])
 
@@ -103,28 +103,28 @@ meshAddEvent(oneglb2_0, [
         eventType: 'click',
         enabled: false,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("单击事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("單擊事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'doubleclick',
         enabled: false,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("双击事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("雙擊事件:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'contextmenu',
         enabled: false,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("鼠标右键:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠右鍵:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'pointerenter',
         enabled: true,
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
-            console.log("鼠标移入:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠移入:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
             window.tvtDomPanel1visible.value = true
             document.body.style.cursor = 'pointer'
-            console.log("鼠标移入:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠移入:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     }, {
         eventType: 'pointerleave',
@@ -132,7 +132,7 @@ meshAddEvent(oneglb2_0, [
         function: (PointerEvent: any, currentObject: any, point: any, object: any, distance: any) => {
             window.tvtDomPanel1visible.value = false
             document.body.style.cursor = 'default'
-            console.log("鼠标移出:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
+            console.log("滑鼠移出:" + currentObject.uuid, PointerEvent, currentObject, point, object, distance)
         }
     },])
 
