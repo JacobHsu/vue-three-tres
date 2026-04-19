@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script type="module" crossorigin src="/vue-three-tres/water/js/polyfills.a9wNoSKN1776614069746.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>
+        TvT.js
+    </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./logo.png">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            if (!window.__POWERED_BY_QIANKUN__) {
+                const hm = document.createElement("script")
+                hm.src = "https://hm.baidu.com/hm.js?3c442b1ada04ec23771dfc94ea581c10"
+                const s = document.getElementsByTagName("script")[0]
+                s.parentNode.insertBefore(hm, s)
+            }
+        })()
+    </script>
+
+    <script src="/vue-three-tres/water/lib/jweixin-1.6.0.js"></script>
+    <script src="/vue-three-tres/water/lib/uni.webview.0.1.52.js"></script>
+  <script crossorigin="">import('/vue-three-tres/water/js/index.B-sIOeMw1776614069746.js').finally(() => {
+            
+    const qiankunLifeCycle = window.moudleQiankunAppLifeCycles && window.moudleQiankunAppLifeCycles['TvT.js'];
+    if (qiankunLifeCycle) {
+      window.proxy.vitemount((props) => qiankunLifeCycle.mount(props));
+      window.proxy.viteunmount((props) => qiankunLifeCycle.unmount(props));
+      window.proxy.vitebootstrap(() => qiankunLifeCycle.bootstrap());
+      window.proxy.viteupdate((props) => qiankunLifeCycle.update(props));
+    }
+  
+          })</script>
+  <link rel="modulepreload" crossorigin="" href="/vue-three-tres/water/js/3d-tiles-renderer.DS5DWzeI1776614069746.js">
+  <link rel="modulepreload" crossorigin="" href="/vue-three-tres/water/js/runtime-core.esm-bundler.D5Ci-qZd1776614069746.js">
+  <link rel="stylesheet" crossorigin="" href="/vue-three-tres/water/css/index.D7LAluS81776614069746.css">
+</head>
+
+<body>
+    <div id="tvt-app"></div>
+
+<script>
+  const createDeffer = (hookName) => {
+    const d = new Promise((resolve, reject) => {
+      window.proxy && (window.proxy[`vite${hookName}`] = resolve)
+    })
+    return props => d.then(fn => fn(props));
+  }
+  const bootstrap = createDeffer('bootstrap');
+  const mount = createDeffer('mount');
+  const unmount = createDeffer('unmount');
+  const update = createDeffer('update');
+
+  ;(global => {
+    global.qiankunName = 'TvT.js';
+    global['TvT.js'] = {
+      bootstrap,
+      mount,
+      unmount,
+      update
+    };
+  })(window);
+</script></body></html>
